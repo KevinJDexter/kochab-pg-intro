@@ -1,0 +1,13 @@
+<div>
+  <input type="text" ng-model="vm.newShoe.name" placeholder="Shoe Name"/>
+  <input type="text" ng-model="vm.newShoe.cost" placeholder="Cost"/>
+  <button ng-click="vm.addShoe()">Add Shoe</button>
+  <ul>
+    <li ng-repeat="shoe in vm.shoes.shoeList">
+      <input type="text" ng-model="shoe.name" />
+      <input type="text" ng-model="shoe.cost" />
+      <button ng-click="vm.updateShoe(shoe)">Update</button>
+      <button ng-click="vm.deleteShoe(shoe)">Delete</button>
+    </li>
+  </ul>
+</div>
